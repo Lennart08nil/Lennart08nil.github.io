@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>JD PRO AB – Business & Employment Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Hand-drawn style fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Nunito', sans-serif;
+            background-color: #faf9f7;
+            color: #2d2d2d;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Patrick Hand', cursive;
+            letter-spacing: 1px;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        .subtitle {
+            max-width: 600px;
+            font-size: 18px;
+        }
+
+        /* HERO */
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .hero img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 20px;
+            box-shadow: 6px 6px 0 #e0ddd8;
+        }
+
+        /* BLOCK TITLES */
+        .block-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* SERVICES & ADVANTAGES */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 0 #e4e1db;
+        }
+
+        /* PROCESS */
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .step {
+            flex: 1;
+            min-width: 220px;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #2f3a3f;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            width: 100%;
+        }
+
+        form {
+            background: #ffffff;
+            color: #2d2d2d;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        button {
+            background: #2f3a3f;
+            color: #ffffff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 18px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #1f272b;
+            color: #cccccc;
+            text-align: center;
+            padding: 30px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 900px) {
+            .hero, .contact-wrapper {
+                grid-template-columns: 1fr;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 1. HERO -->
+<section class="hero">
+    <div>
+        <h1>JD PRO AB</h1>
+        <h2>Vi skapar struktur, människor och processer som fungerar på riktigt</h2>
+        <p class="subtitle">
+            JD PRO AB är ett svenskt bolag som arbetar praktiskt med rekrytering, 
+            företagsstyrning och projektledning. Vi hjälper företag att organisera 
+            sin verksamhet, bygga starka team och fatta tydliga affärsbeslut som håller över tid.
+        </p>
+    </div>
+    <img src="https://plus.unsplash.com/premium_photo-1664475719609-bdddaf0fdd68?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8b2ZmaWNlJTIwdGVhbXxlbnwwfHwwfHx8MA%3D%3D" alt="Teamarbete">
+</section>
+
+<!-- 2. ABOUT -->
+<section>
+    <h2 class="block-title">Vem vi är – bortom titlar</h2>
+    <p>
+        JD PRO AB grundades med idén att affärsutveckling ska vara tydlig, mänsklig och mätbar.
+        Vi arbetar nära våra kunder och går in i deras vardagliga utmaningar – inte bara i presentationer.
+        Vår erfarenhet sträcker sig från personalförmedling och ledningsstöd till komplex projektstyrning.
+        Vi tror på struktur, ansvar och transparens.
+        För oss är varje uppdrag personligt och varje lösning skräddarsydd.
+    </p>
+</section>
+
+<!-- 3. SERVICES -->
+<section>
+    <h2 class="block-title">Vad vi faktiskt gör</h2>
+    <div class="grid-3">
+        <div class="card">
+            <h3>Employment & Talent Matching</h3>
+            <p>
+                Vi kopplar samman företag med rätt kompetens baserat på verkliga behov, inte generiska profiler.
+                Fokus ligger på långsiktiga matchningar där både individ och organisation växer.
+                Vi hanterar hela processen – från behovsanalys till uppföljning.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Business & Administrativ Styrning</h3>
+            <p>
+                Vi hjälper företag att strukturera interna processer, roller och ansvar.
+                Målet är effektivare arbetsflöden, tydligare beslutsvägar och bättre kontroll.
+                Praktiska lösningar som fungerar i vardagen – inte bara på papper.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Projekt- & Ledningskonsultation</h3>
+            <p>
+                Vi leder och stödjer projekt från start till leverans.
+                Med tydliga mål, realistiska tidsramar och kontinuerlig uppföljning.
+                Perfekt för företag som saknar intern projektledningskapacitet.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 4. ADVANTAGES -->
+<section>
+    <h2 class="block-title">Varför företag väljer JD PRO AB</h2>
+    <div class="grid-3">
+        <div class="card">
+            <h3>Hands-on arbetssätt</h3>
+            <p>
+                Vi arbetar operativt tillsammans med er – inte på distans med färdiga mallar.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Affärsförståelse först</h3>
+            <p>
+                Varje lösning utgår från er affärsmodell, era mål och er verklighet.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Långsiktigt partnerskap</h3>
+            <p>
+                Vi bygger relationer, inte engångsuppdrag.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 5. PROCESS -->
+<section>
+    <h2 class="block-title">Så arbetar vi – steg för steg</h2>
+    <div class="steps">
+        <div class="step">
+            <h3>1. Analys & förståelse</h3>
+            <p>
+                Vi sätter oss in i er situation, era utmaningar och mål.
+            </p>
+        </div>
+        <div class="step">
+            <h3>2. Struktur & genomförande</h3>
+            <p>
+                Vi tar fram en tydlig plan och genomför den tillsammans med er.
+            </p>
+        </div>
+        <div class="step">
+            <h3>3. Uppföljning & förbättring</h3>
+            <p>
+                Vi säkerställer resultat och justerar vid behov.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 6. CONTACT -->
+<section class="contact">
+    <div class="contact-wrapper">
+        <div>
+            <h2 class="block-title">Låt oss prata</h2>
+            <p>
+                Har ni behov av struktur, rätt kompetens eller tydligare processer?
+                Hör av er till oss så tar vi ett första samtal utan förpliktelser.
+                Vi tror på dialog före beslut.
+            </p>
+            <p>
+                <strong>E-post:</strong> contact@jdpro.pro<br>
+                <strong>Adress:</strong> Östra Finnbodavägen 13B, 131 73 Nacka, Stockholm
+            </p>
+        </div>
+
+        <form>
+            <h3>Kontakta oss</h3>
+            <input type="text" placeholder="Ditt namn">
+            <input type="email" placeholder="Din e-post">
+            <textarea rows="4" placeholder="Kort beskrivning av ert behov"></textarea>
+            <button type="submit">Skicka</button>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 JD PRO AB · Business & Employment Consulting · Stockholm
+</footer>
+
+</body>
+</html>
